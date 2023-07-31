@@ -77,6 +77,16 @@ userSchema.statics.findByCredentials = async (email, password) => {
     return user
 }
 
+userSchema.methods.toJSON = function () {
+    const user = this
+    const userObject = user.toObject()
+
+    delete userObject.password
+    delete userObject.tokens
+
+    return userObject
+}
+
 //Middleware Function to hash the password before saving it to database
 userSchema.pre('save', async function (next) {
     const user = this
