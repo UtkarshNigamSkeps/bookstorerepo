@@ -10,3 +10,39 @@
 {"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-07-31T06:40:31.716Z"}
 {"level":"info","message":"Payment successfull for User 64c26205ed9e600a64478424.","timestamp":"2023-07-31T06:40:32.237Z"}
 {"level":"info","message":"Data saved for User 64c26205ed9e600a64478424","timestamp":"2023-07-31T06:40:32.252Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:04:41.972Z"}
+{"level":"info","message":"Payment successfull for User 64c26205ed9e600a64478424.","timestamp":"2023-08-02T10:04:42.599Z"}
+{"level":"info","message":"Data saved for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:04:42.618Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:04:55.766Z"}
+{"level":"info","message":"Something went wrong during payment processing for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:04:56.654Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:05:02.656Z"}
+{"level":"info","message":"Payment successfull for User 64c26205ed9e600a64478424.","timestamp":"2023-08-02T10:05:03.316Z"}
+{"level":"info","message":"Data saved for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:05:03.323Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:13:55.534Z"}
+{"level":"info","message":"Payment successfull for User 64c26205ed9e600a64478424.","timestamp":"2023-08-02T10:13:56.273Z"}
+{"level":"info","message":"Data saved for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:13:56.285Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ecK.","timestamp":"2023-08-02T10:36:43.270Z"}
+{"level":"info","message":"Payment successfull for User 64c26205ed9e600a64478424.","timestamp":"2023-08-02T10:36:43.858Z"}
+{"level":"info","message":"Data saved for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:36:43.870Z"}
+{"level":"info","message":"Something went wrong during payment processing for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:36:43.871Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:40:41.261Z"}
+{"level":"info","message":"Payment successfull for User 64c26205ed9e600a64478424.","timestamp":"2023-08-02T10:40:41.868Z"}
+{"level":"info","message":"Data saved for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:40:41.876Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:53:54.311Z"}
+{"level":"info","message":"Payment successfull for User 64c26205ed9e600a64478424.","timestamp":"2023-08-02T10:53:54.970Z"}
+{"level":"info","message":"Data saved for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:53:54.983Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:54:02.496Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:54:11.209Z"}
+{"level":"info","message":"Payment successfull for User 64c26205ed9e600a64478424.","timestamp":"2023-08-02T10:54:11.756Z"}
+{"level":"info","message":"Data saved for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:54:11.762Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:57:33.586Z"}
+{"level":"info","message":"Payment successfull for User 64c26205ed9e600a64478424.","timestamp":"2023-08-02T10:57:34.226Z"}
+{"level":"info","message":"Data saved for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:57:34.240Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:57:39.214Z"}
+{"level":"info","message":"Something went wrong during payment processing for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:57:39.603Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-02T10:59:33.667Z"}
+{"level":"info","message":"Something went wrong during payment processing for User 64c26205ed9e600a64478424","timestamp":"2023-08-02T10:59:34.525Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64be71f4c34f13310c62f5ec.","timestamp":"2023-08-03T08:32:18.560Z"}
+{"level":"info","message":"Something went wrong during payment processing for User 64c26205ed9e600a64478424","timestamp":"2023-08-03T08:32:19.178Z"}
+{"level":"info","message":"User 64c26205ed9e600a64478424 is attempting to buy book 64bd37ef3acf1602034bc651.","timestamp":"2023-08-03T08:33:00.089Z"}
+{"level":"info","message":"Something went wrong during payment processing for User 64c26205ed9e600a64478424","timestamp":"2023-08-03T08:33:01.154Z"}

@@ -1,6 +1,7 @@
 //Routers for book
 
 const express=require('express')
+const Sentry=require('@sentry/node')
 const axios=require('axios')
 const Book=require('../models/books') //Acquiring book model
 const Transaction=require('../models/transaction')
@@ -9,13 +10,22 @@ const bookSchema=require('../middleware/joi_book')
 const logger=require('../logger')
 const router=new express.Router();
 
+Sentry.init({
+    dsn: "https://3b55aafdc6804d0b948ae2478917bccb@o201295.ingest.sentry.io/4505602112356352",
+    tracesSampleRate: 1.0,
+    serverName: "TR_Utkarsh_BookStore"
+})
+
+router.use(Sentry.Handlers.requestHandler());
+router.use(Sentry.Handlers.errorHandler());
+
 
 
 // GET route for gettting all books in the bookstore(Admin and Customer)
 router.get('/books',auth,async (req,res)=>{
     try{
         const books=await Book.find()
-        res.status(200).send(books)
+        res.status(200).json({books})
     }catch(e){
         res.status(404).send(e.message)
     }
@@ -88,15 +98,17 @@ router.delete('/books/:id',auth,async(req,res)=>{
 
 router.post('/buy/book/:id',auth,async(req,res)=>{
     const _id=req.params.id
-    const checkBook=await Book.findById(_id)
-
-    if(!checkBook){
-        return res.status(404).send('Book not found.')
-    }
+    const checkBook=await Book.findById(_id).catch((e)=>{
+        return res.status(500).send('Book not found')
+    })
 
     try{
         logger.info(`User ${req.user_id} is attempting to buy book ${req.params.id}.`)
-        const data = await axios.post("https://stoplight.io/mocks/skeps/book-store:master/12094368/misc/payment/process",req.body)
+        const data = await axios.post("https://stoplight.io/mocks/skeps/book-store:master/12094368/misc/payment/process",req.body).catch((e)=>{
+            logger.info(`Something went wrong during payment processing for User ${req.user_id}`)
+            Sentry.captureException(e)
+            return res.status(404).send('Something went wrong during payment')
+        })
 
         if(data.data){
             logger.info(`Payment successfull for User ${req.user_id}.`)
@@ -111,14 +123,9 @@ router.post('/buy/book/:id',auth,async(req,res)=>{
 
             return res.status(200).send(data.data)
         }
-        else{
-            
-            throw new Error('Please check your credentials')
-        }
-        
-        
     }catch(e){
         logger.info(`Something went wrong during payment processing for User ${req.user_id}`)
+        Sentry.captureException(e)
         res.status(400).send(e.message)
     }
 })
